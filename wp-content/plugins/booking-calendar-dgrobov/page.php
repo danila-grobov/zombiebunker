@@ -27,4 +27,4 @@ wp_enqueue_script('custom_script', PLUGIN_DIR . '/js/page.js');
         padding-bottom: 0px;
     }
 </style>
-<iframe src="http://zombiebunker.lt/wp-content/plugins/booking-calendar-dgrobov/admin.php" frameborder="0" class="admin_wrapper" width="100%" height="100%"></iframe>
+<iframe src="https://zombiebunker.lt/wp-content/plugins/booking-calendar-dgrobov/admin.php" frameborder="0" class="admin_wrapper" width="100%" height="100%"></iframe>
