@@ -1,0 +1,171 @@
+1
+ BookingWizz The Manual
+ index.html
+2
+ Introduction
+ introduction.html
+3
+ Overview: What is BookingWizz?
+ overview__what_is_bookingwizz_.html
+4
+ Requirements
+ requirements_1.html
+5
+ Do I Need the "BookingWizz for WordPress" addon?
+ do_i_need_the__bookingwizz_for_wordpress__addon_.html
+6
+ Do I Need the "BookingWizz Credit Card Payments" addon?
+ do_i_need_the__bookingwizz_credit_card_payments__addon_.html
+7
+ Do I Need the "BookingWizz SMS Reminders" addon?
+ do_i_need_the__bookingwizz_sms_reminders__addon_.html
+8
+ Do I Need the "BookingWizz Event Tickets" addon?
+ do_i_need_the__bookingwizz_event_tickets__addon_.html
+9
+ Part One: BookingWizz (standalone)
+ part_one__bookingwizz__standalone_.html
+10
+ Installation
+ installation_1.html
+11
+ Upgrade
+ upgrade_1.html
+12
+ Configuration & Settings
+ configuration___settings.html
+13
+ Part Two:  BookingWizz for Wordpress
+ part_two___bookingwizz_for_wordpress.html
+14
+ Installation
+ installation_2.html
+15
+ Upgrade
+ upgrade_2.html
+16
+ Shortcodes and widgets explained
+ shortcodes_and_widgets_explained.html
+17
+ Adding calendar to your sidebar via widgets
+ adding_calendar_to_your_sidebar_via_widgets.html
+18
+ Adding calendar to your page/post using shortcode
+ adding_calendar_to_your_page_post_using_shortcode.html
+19
+ Part Three:  BookingWizz Credit Card Payments addon
+ part_three___bookingwizz_credit_card_payments_addon.html
+20
+ Requirements
+ requirements_2.html
+21
+ Installation
+ installation_3.html
+22
+ Upgrade
+ upgrade_3.html
+23
+ Part Four: BookingWizz SMS Reminders addon
+ part_four__bookingwizz_sms_reminders_addon.html
+24
+ Installation
+ installation_4.html
+25
+ General Configuration & Settings
+ general_configuration___settings.html
+26
+ Tropo Configuration
+ tropo_configuration.html
+27
+ Twilio Configuration
+ twilio_configuration.html
+28
+ CallFire Configuration
+ callfire_configuration.html
+29
+ Nexmo, Plivo, TelAPI, CDyne, TextMagic, BulkSMS, TextLocal Configuration
+ nexmo__plivo__telapi__cdyne__textmagic__bulksms__textlocal_configuration.html
+30
+ Part Five: BookingWizz Event Tickets addon
+ part_five__bookingwizz_event_tickets_addon.html
+31
+ Installation
+ installation_5.html
+32
+ Settings
+ settings.html
+33
+ Part Six:  Definitions & How-To's
+ part_six___definitions___how_to_s.html
+34
+ Service = Calendar
+ service___calendar.html
+35
+ Types of Calendars
+ types_of_calendars.html
+36
+ Single Day
+ single_day.html
+37
+ Multi-Day
+ multi_day.html
+38
+ Events (and everything related to them)
+ events__and_everything_related_to_them_.html
+39
+ How to use small calendar snippet on my NON-WORDPRESS SITE?
+ how_to_use_small_calendar_snippet_on_my_non_wordpress_site_.html
+40
+ How to change "xyz" word displayed on "abc" page?
+ how_to_change__xyz__word_displayed_on__abc__page_.html
+41
+ How to create custom time intervals?
+ how_to_create_custom_time_intervals_.html
+42
+ Part Seven:  Changing layout, design, wording (standalone)
+ part_seven___changing_layout__design__wording__standalone_.html
+43
+ Customizing your calendar look and feel
+ customizing_your_calendar_look_and_feel.html
+44
+ Adjusting width of the popup booking form
+ adjusting_width_of_the_popup_booking_form.html
+45
+ Modifying booking form (adding / removing fields)
+ modifying_booking_form__adding___removing_fields_.html
+46
+ Adding new language to bookingwizz, or translating existing
+ adding_new_language_to_bookingwizz__or_translating_existing.html
+47
+ Part Eight:  FAQ / Changelog / Support
+ part_eight___faq___changelog___support.html
+48
+ Frequently Asked Questions & Common errors
+ frequently_asked_questions___common_errors.html
+49
+ Changelog
+ changelog.html
+50
+ BookingWizz Changelog
+ bookingwizz_changelog.html
+51
+ BookingWizz Credit Card Payments Changelog
+ bookingwizz_credit_card_payments_changelog.html
+52
+ BookingWizz for Wordpress Changelog
+ bookingwizz_for_wordpress_changelog.html
+53
+ BookingWizz SMS Reminders Changelog
+ bookingwizz_sms_reminders_changelog.html
+54
+ Technical Support
+ technical_support.html
+55
+ Request Modifications
+ request_modifications.html
+56
+ Feature Suggestions
+ feature_suggestions.html
+57
+ Sources, Credits and Appreciation
+ sources__credits_and_appreciation.html

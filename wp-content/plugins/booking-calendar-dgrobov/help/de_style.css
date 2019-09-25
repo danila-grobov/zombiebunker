@@ -1,0 +1,219 @@
+.detbl
+{
+direction:ltr; border-spacing:0px;
+border-collapse: collapse;
+border: 0px none black;
+}
+.de_list
+{
+margin: 0;padding: 0;
+}
+div.p
+{
+margin-top:0px;
+margin-bottom:0px;
+font-weight:normal;
+}
+
+div.description_on_page div.p
+{font-family:"Arial";
+font-size: 11pt;color:#000000;
+font-style:normal;
+text-decoration:none;
+font-weight:normal;
+}
+h1
+{
+font-family:"Arial";
+font-size: 13pt;color:#375db0;
+font-style:normal;
+text-decoration:none;
+font-weight:normal;
+display:inline-block;
+margin:0;
+padding:0;
+}
+h2
+{
+font-family:"Arial";
+font-size: 11pt;color:#4f87fd;
+font-style:normal;
+text-decoration:none;
+font-weight:normal;
+display:inline-block;
+margin:0;
+padding:0;
+}
+span.code
+{
+font-family:"Courier New";
+font-size: 11pt;color:#000000;
+font-style:normal;
+text-decoration:none;
+font-weight:normal;
+}
+span.quote
+{
+font-family:"Georgia";
+font-size: 11pt;color:#000000;
+font-style:italic;
+text-decoration:none;
+font-weight:normal;
+}
+img.de_780D01ADE8
+{
+margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;}
+span.de_160AB2A55C
+{
+	font-family: "Arial";
+	font-size: 10pt;
+	color:#3f3f3f;
+	font-style:italic;
+}
+span.de_38AAE45C6C
+{
+	font-family: "Arial";
+	font-size: 12pt;
+	color:#ff0000;
+}
+span.de_496AA02164
+{
+	font-size: 12pt;
+	color:#000000;
+}
+span.de_4AF4BF9DD6
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#000000;
+}
+span.de_508BD1E899
+{
+	font-family: "Arial";
+	font-size: 18pt;
+	color:#ff0000;
+}
+span.de_51752156DC
+{
+	color:#000000;
+}
+span.de_56F4564E24
+{
+	font-family: "Arial";
+	font-size: 12pt;
+	color:#000000;
+}
+span.de_68A3F229CF
+{
+	font-size: 16pt;
+	color:#000000;
+}
+span.de_7453222355
+{
+	font-family: "Arial";
+	font-size: 14pt;
+	color:#ff3600;
+}
+span.de_77576D2087
+{
+	font-family: "Trebuchet MS";
+	font-size: 16pt;
+}
+span.de_78E6D8A675
+{
+	font-size: 18pt;
+	color:#000000;
+}
+span.de_823826CA2C
+{
+	font-style:italic;
+}
+span.de_922EDE2353
+{
+	font-family: "Arial";
+	font-size: 14pt;
+	color:#000000;
+}
+span.de_9599D3D09C
+{
+	font-family: "Arial";
+	font-size: 12pt;
+	color:#0012ff;
+}
+span.de_96D6BE88DC
+{
+	font-family: "Arial";
+	font-size: 12pt;
+	color:#ff3600;
+}
+span.de_97951E4125
+{
+	font-family: "Arial";
+	font-size: 10pt;
+	color:#666666;
+}
+span.de_A6050E0570
+{
+	font-family: "Trebuchet MS";
+	font-size: 10pt;
+}
+span.de_AAADFDC092
+{
+	font-family: "Arial";
+	font-size: 12pt;
+	color:#ff3600;
+	text-decoration:underline;
+}
+span.de_AC776ED092
+{
+	font-family: "Arial";
+	font-size: 12pt;
+	color:#0000ff;
+	text-decoration:underline;
+}
+span.de_AD3B714EC2
+{
+	font-size: 14pt;
+	color:#000000;
+}
+span.de_CB1C399E93
+{
+	font-family: "Arial";
+	font-size: 18pt;
+	color:#ff3600;
+}
+span.de_CCD88D350B
+{
+	font-family: "Arial";
+	font-size: 12pt;
+	color:#000000;
+	font-style:italic;
+}
+span.de_F26F2563FE
+{
+	font-family: "Trebuchet MS";
+	font-size: 36pt;
+	color:#000000;
+}
+span.de_FB0C0B9D4A
+{
+	font-family: "MS PGothic";
+	font-size: 12pt;
+	color:#000000;
+}
+span.de_FB0F3F18D6
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#3f3f3f;
+}
+span.de_FBC6B3A7AA
+{
+	font-family: "Arial";
+	font-size: 10pt;
+	color:#7f7f7f;
+	font-style:italic;
+}
+.list-element {
+	list-style-type: none;
+}
