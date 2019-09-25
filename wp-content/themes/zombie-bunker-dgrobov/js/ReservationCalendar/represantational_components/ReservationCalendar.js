@@ -22,6 +22,7 @@ export default class ReservationCalendar extends Component {
       toggleModal();
       setLanguage("LT");
       loadDates(serviceId, activeDate);
+      console.log("clicked!");
     });
     $(triggerButton + "-EN a").click(() => {
       toggleModal();
