@@ -28,16 +28,7 @@ export default class ReservationCalendar extends Component {
       setLanguage("EN");
       loadDates(serviceId, activeDate);
     });
-    $(triggerButton + "-LT").click(() => {
-      toggleModal();
-      setLanguage("LT");
-      loadDates(serviceId, activeDate);
-    });
-    $(triggerButton + "-EN").click(() => {
-      toggleModal();
-      setLanguage("EN");
-      loadDates(serviceId, activeDate);
-    });
+
     var cuponCode = this.getParams(window.location.href).coupon
       ? this.getParams(window.location.href).coupon
       : "";
