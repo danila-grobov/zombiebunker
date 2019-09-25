@@ -137,14 +137,16 @@ export default class ContactInfo extends Component {
               {lng === "LT" ? (
                 <span>
                   Sutinku su{" "}
-                  <a href={THEME_URL + "/duomenu-tvarkymo-taisykles"}>
+                  <a href={"" /*THEME_URL + "/duomenu-tvarkymo-taisykles"*/}>
                     asmens duomenų tvarkymo taisyklėmis
                   </a>
                 </span>
               ) : (
                 <span>
                   I accept the{" "}
-                  <a href={THEME_URL + "/en/privacy-policy"}>Privacy Policy</a>
+                  <a href={"" /*THEME_URL + "/en/privacy-policy"*/}>
+                    Privacy Policy
+                  </a>
                 </span>
               )}
             </span>
