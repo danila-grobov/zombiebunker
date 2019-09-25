@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The header for our theme
  *
@@ -10,15 +11,19 @@
  * @subpackage Twenty_Nineteen
  * @since 1.0.0
  */
-?><!doctype html>
+?>
+<!doctype html>
 <html <?php language_attributes(); ?>>
+
 <head>
-        <meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="<?php bloginfo('charset'); ?>" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>ZombieBunker - išgelbėk Vilnių nuo zombių infekcijos</title>
         <link rel="profile" href="https://gmpg.org/xfn/11" />
         <?php wp_head(); ?>
 </head>
+
 <body <?php body_class(); ?>>
-    <?php wp_body_open(); ?>
-    <div id="page" class="site">
-        <div id="content" class="site-content">
+        <?php wp_body_open(); ?>
+        <div id="page" class="site">
+                <div id="content" class="site-content">
