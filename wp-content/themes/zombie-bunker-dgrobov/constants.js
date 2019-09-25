@@ -1,4 +1,4 @@
-export const THEME_URL = "https://zombiebunker.lt";
+export const THEME_URL = "http://zombiebunker.tk";
 export const PLUGIN_DIR =
   THEME_URL + "/wp-content/themes/zombie-bunker-dgrobov";
 export const MONTH_NAMES = {
