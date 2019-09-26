@@ -3,7 +3,6 @@ import $ from "jquery";
 import { PLUGIN_DIR } from "../../../constants";
 import Input from "./Input";
 import InputEmail from "./Email";
-import { THEME_URL } from "../../../constants";
 export default class ContactInfo extends Component {
   render() {
     const {
@@ -11,7 +10,8 @@ export default class ContactInfo extends Component {
       changePhone,
       changeComment,
       toggleAgree,
-      toggleYoung,
+      enableYoung,
+      disableYoung,
       phone,
       comment,
       name,
@@ -109,19 +109,40 @@ export default class ContactInfo extends Component {
           activeInputs={activeInputs}
         />
         <div className="checkbox_wrapper">
-          <div className="checkBox clickable" onClick={toggleYoung}>
+          <div className="checkBox clickable" onClick={enableYoung}>
             <img
               src={
-                young
+                young === true && young !== null
                   ? PLUGIN_DIR + "/imgs/checkbox_checked.svg"
                   : PLUGIN_DIR + "/imgs/checkbox_unchecked.svg"
               }
             />
             <span className="helper">
               {lng === "LT"
-                ? "Žaidime dalyvaus asmenys jaunesni nei 18 metų"
-                : "Persons younger than 18 years old will attend"}
+                ? "Žaidime dalyvaus asmenys jaunesni nei 18 metų."
+                : "Persons younger than 18 years old will attend."}
             </span>
+          </div>
+          <div className="checkBox clickable" onClick={disableYoung}>
+            <img
+              src={
+                young === false && young !== null
+                  ? PLUGIN_DIR + "/imgs/checkbox_checked.svg"
+                  : PLUGIN_DIR + "/imgs/checkbox_unchecked.svg"
+              }
+            />
+            <span className="helper">
+              {lng === "LT"
+                ? "Žaidime dalyvaus 18 metų arba vyresni asmenys."
+                : "18 years old or older persons will attend."}
+            </span>
+          </div>
+          <div className="checkBox clickable">
+            {errors["young"] ? (
+              <div className="errorText">{"- " + errors["young"]}</div>
+            ) : (
+              ""
+            )}
           </div>
           <div className="checkBox">
             <img
@@ -138,14 +159,14 @@ export default class ContactInfo extends Component {
                 <span>
                   Sutinku su{" "}
                   <a href={"" /*THEME_URL + "/duomenu-tvarkymo-taisykles"*/}>
-                    asmens duomenų tvarkymo taisyklėmis
+                    asmens duomenų tvarkymo taisyklėmis.
                   </a>
                 </span>
               ) : (
                 <span>
                   I accept the{" "}
                   <a href={"" /*THEME_URL + "/en/privacy-policy"*/}>
-                    Privacy Policy
+                    Privacy Policy.
                   </a>
                 </span>
               )}

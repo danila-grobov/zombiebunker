@@ -15,27 +15,33 @@
 require_once("includes/config.php"); //Load the configurations
 function validate_phone_number($phone)
 {
-    // Allow +, - and . in phone number
-    $filtered_phone_number = filter_var($phone, FILTER_SANITIZE_NUMBER_INT);
-    // Remove "-" from number
-    $phone_to_check = str_replace("-", "", $filtered_phone_number);
-    // Check the lenght of number
-    // This can be customized if you want phone number from a specific country
-    if (strlen($phone_to_check) < 10 || strlen($phone_to_check) > 14) {
-        return false;
-    } else {
+    if (preg_match(
+        '/((?:\+|00)[17](?: |\-)?|(?:\+|00)[1-9]\d{0,2}(?: |\-)?|(?:\+|00)1\-\d{3}(?: |\-)?)?(0\d|\([0-9]{3}\)|[1-9]{0,3})(?:((?: |\-)[0-9]{2}){4}|((?:[0-9]{2}){4})|((?: |\-)[0-9]{3}(?: |\-)[0-9]{4})|([0-9]{7}))/',
+        $phone
+    ))
         return true;
-    }
+    return false;
 }
 bw_do_action("bw_load");
 ##################################################################################
 #  	1. GET ALL VARIABLES
 $name = (!empty($_POST["name"])) ? strip_tags(str_replace("'", "`", $_POST["name"])) : '';
 $agrees = ($_POST["agrees"] === 'true') ? true : false;
-$young = ($_POST["young"] === 'true') ? 1 : 0;
+if ($_POST["young"] === 'true') {
+    $young = 1;
+}
+if ($_POST["young"] === 'false') {
+    $young = 0;
+}
+if ($_POST["young"] === 'null') {
+    $young = 'null';
+}
 $lng = $_POST["lng"];
 $phone = (!empty($_POST["phone"])) ? strip_tags(str_replace("'", "`", $_POST["phone"])) : '';
 $email = (!empty($_POST["email"])) ? strip_tags(str_replace("'", "`", $_POST["email"])) : '';
+
+$email = str_replace(" ", "", $email);
+$phone = str_replace(" ", "", $phone);
 $email1 = (!empty($_POST["email1"])) ? strip_tags(str_replace("'", "`", $_POST["email1"])) : '';
 $comments = (!empty($_POST["comments"])) ? strip_tags(str_replace("'", "`", $_POST["comments"])) : '';
 $date = (!empty($_POST["date"])) ? strip_tags(str_replace("'", "`", $_POST["date"])) : '';
@@ -51,8 +57,11 @@ $referrer = (!empty($_REQUEST["referrer"])) ? strip_tags(str_replace("'", "`", $
 $error = checkQtyForTimeBooking($serviceID, $time, $date, $interval, $qty);
 if (!$error) {
     if (
-        !empty($name) && validate_phone_number($phone) &&
-        filter_var($email, FILTER_VALIDATE_EMAIL) && $agrees === true && strlen($comments) < 10000
+        !empty($name) && validate_phone_number($phone)
+        && filter_var($email, FILTER_VALIDATE_EMAIL)
+        && $agrees === true
+        && strlen($comments) < 10000
+        && $young !== "null"
     ) {
         // if (!preg_match("(^[-\w\.]+@([-a-z0-9]+\.)+[a-z]{2,4}$)i", $email)) {
         //     $msg = "<div class='error_msg'>" . BEP_10 . "</div>";
@@ -212,8 +221,10 @@ if (!$error) {
     } else {
         $errors = [];
         if (empty($name)) {
-
             $errors +=  array("name" => $lng == "LT" ? "Įveskite savo vardą" : "Please enter your name");
+        }
+        if ($young === "null") {
+            $errors +=  array("young" => $lng == "LT" ? "Turite pasirinkti dalyvių amžių" : "Please select the age of the attendants");
         }
         if (!validate_phone_number($phone)) {
             $errors += array("phone" => $lng == "LT" ? "Įveskite taisyklinga telefono numerį ( +xxx xxx xxxxx )" : "Please enter a valid phone number ( +xxx xxx xxxxx )");

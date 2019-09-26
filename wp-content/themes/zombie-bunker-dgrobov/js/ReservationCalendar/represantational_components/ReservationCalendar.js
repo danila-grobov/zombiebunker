@@ -68,7 +68,8 @@ export default class ReservationCalendar extends Component {
       changePhone,
       changeComment,
       toggleAgree,
-      toggleYoung,
+      enableYoung,
+      disableYoung,
       email,
       phone,
       comment,
@@ -127,7 +128,8 @@ export default class ReservationCalendar extends Component {
                       changePhone={changePhone}
                       changeComment={changeComment}
                       toggleAgree={toggleAgree}
-                      toggleYoung={toggleYoung}
+                      enableYoung={enableYoung}
+                      disableYoung={disableYoung}
                       email={email}
                       phone={phone}
                       name={name}

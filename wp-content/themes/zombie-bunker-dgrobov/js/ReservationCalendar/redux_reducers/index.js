@@ -14,7 +14,7 @@ const initialState = {
   phone: "",
   comment: "",
   agrees: false,
-  young: false,
+  young: null,
   serviceId: null,
   open: false,
   sending: "IDLE",
@@ -108,8 +108,11 @@ export default (state = initialState, { type, props }) => {
     case "TOGGLE_AGREE": {
       return dotProp.toggle(state, "agrees");
     }
-    case "TOGGLE_YOUNG": {
-      return dotProp.toggle(state, "young");
+    case "ENABLE_YOUNG": {
+      return dotProp.set(state, "young", true);
+    }
+    case "DISABLE_YOUNG": {
+      return dotProp.set(state, "young", false);
     }
     case "CHANGE_TIME": {
       const { time } = props;

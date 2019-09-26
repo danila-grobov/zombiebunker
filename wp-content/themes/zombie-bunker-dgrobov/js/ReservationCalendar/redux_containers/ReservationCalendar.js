@@ -6,7 +6,6 @@ import {
   changeActive,
   toggleLockIn,
   toggleAgree,
-  toggleYoung,
   changeName,
   changeComment,
   changeEmail,
@@ -14,7 +13,9 @@ import {
   sendData,
   setErrors,
   setInputState,
-  setLanguage
+  setLanguage,
+  enableYoung,
+  disableYoung
 } from "../redux_actions";
 import ReservationCalendar from "../represantational_components/ReservationCalendar";
 const mapStateToProps = state => ({
@@ -43,7 +44,8 @@ const mapDispatchToProps = dispatch => ({
   changeTime: time => dispatch(changeTime(time)),
   toggleLockIn: () => dispatch(toggleLockIn()),
   toggleAgree: () => dispatch(toggleAgree()),
-  toggleYoung: () => dispatch(toggleYoung()),
+  disableYoung: () => dispatch(disableYoung()),
+  enableYoung: () => dispatch(enableYoung()),
   changeName: name => dispatch(changeName(name)),
   changeComment: comment => dispatch(changeComment(comment)),
   changeEmail: email => dispatch(changeEmail(email)),

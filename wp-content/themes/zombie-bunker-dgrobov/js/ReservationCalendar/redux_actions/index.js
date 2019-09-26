@@ -141,8 +141,11 @@ export const toggleLockIn = () => ({
 export const toggleAgree = () => ({
   type: "TOGGLE_AGREE"
 });
-export const toggleYoung = () => ({
-  type: "TOGGLE_YOUNG"
+export const enableYoung = () => ({
+  type: "ENABLE_YOUNG"
+});
+export const disableYoung = () => ({
+  type: "DISABLE_YOUNG"
 });
 export const changeActive = date => ({
   type: "CHANGE_ACTIVE",
