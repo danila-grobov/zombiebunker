@@ -15,7 +15,8 @@ import {
   setInputState,
   setLanguage,
   enableYoung,
-  disableYoung
+  disableYoung,
+  loadCoupon
 } from "../redux_actions";
 import ReservationCalendar from "../represantational_components/ReservationCalendar";
 const mapStateToProps = state => ({
@@ -39,6 +40,8 @@ const mapStateToProps = state => ({
 });
 const mapDispatchToProps = dispatch => ({
   loadDates: (serviceId, date) => dispatch(loadDates(serviceId, date)),
+  loadCoupon: (triggerButton, serviceId) =>
+    dispatch(loadCoupon(triggerButton, serviceId)),
   toggleModal: () => dispatch(toggleModal()),
   change: date => dispatch(changeActive(date)),
   changeTime: time => dispatch(changeTime(time)),

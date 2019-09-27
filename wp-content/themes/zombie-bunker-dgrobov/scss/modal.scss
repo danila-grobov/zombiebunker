@@ -1,5 +1,6 @@
 @import "./colors.scss";
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap");
+@import "~izitoast/dist/css/iziToast.min.css";
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -8,7 +9,9 @@
 ::-webkit-scrollbar-track {
   background: transparent;
 }
-
+b {
+  font-weight: bolder;
+}
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgba(136, 136, 136, 0.308);

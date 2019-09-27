@@ -1,14 +1,14 @@
 import { THEME_URL } from "../../../constants";
 import axios from "axios";
-export const loadDates = (serviceId, date) => {
-  return (dispatch, getState) => {
-    dispatch(loadStarted());
-    let loaded = 0;
-    const cupon = document.cookie.match(new RegExp("(^| )coupon=([^;]+)"))
+import iziToast from "izitoast";
+import $ from "jquery";
+export const loadCoupon = (triggerButton, serviceId) => {
+  return dispatch => {
+    const coupon = document.cookie.match(new RegExp("(^| )coupon=([^;]+)"))
       ? document.cookie.match(new RegExp("(^| )coupon=([^;]+)"))[2]
       : "";
     let formData = new FormData();
-    formData.set("couponCode", cupon);
+    formData.set("couponCode", coupon);
     formData.set("serviceId", serviceId);
     axios({
       method: "post",
@@ -18,14 +18,39 @@ export const loadDates = (serviceId, date) => {
       data: formData,
       config: { headers: { "Content-Type": "multipart/form-data" } }
     }).then(({ data }) => {
-      if (data.responce === true) dispatch(setCoupon({ ...data, code: cupon }));
-      else dispatch(setCoupon(null));
-      if (loaded === 1) {
-        dispatch({
-          type: "FINISH_LOADING"
-        });
-      } else loaded++;
+      if (data.responce === true) {
+        if ($(triggerButton + "-EN").length > 0) {
+          dispatch(setCoupon({ ...data, code: coupon }));
+          iziToast.success({
+            title: coupon,
+            message:
+              "The <b>-" +
+              data.value +
+              (data.type === "rel" ? "%" : "EUR") +
+              "</b> discount was successfully applied!",
+            timeout: 5000,
+            position: "topCenter"
+          });
+        } else {
+          iziToast.success({
+            title: coupon,
+            message:
+              "Sėkmingai pritaikyta <b>-" +
+              data.value +
+              (data.type === "rel" ? "%" : "EUR") +
+              "</b> nuolaida!",
+            timeout: 5000,
+            position: "topCenter"
+          });
+        }
+      } else dispatch(setCoupon(null));
     });
+  };
+};
+export const loadDates = (serviceId, date) => {
+  return (dispatch, getState) => {
+    dispatch(loadStarted());
+    let loaded = 0;
     axios
       .post(
         THEME_URL +
@@ -37,11 +62,9 @@ export const loadDates = (serviceId, date) => {
           type: "DATES_LOADED",
           props: { dates: data, date, serviceId }
         });
-        if (loaded === 1) {
-          dispatch({
-            type: "FINISH_LOADING"
-          });
-        } else loaded++;
+        dispatch({
+          type: "FINISH_LOADING"
+        });
       });
   };
 };

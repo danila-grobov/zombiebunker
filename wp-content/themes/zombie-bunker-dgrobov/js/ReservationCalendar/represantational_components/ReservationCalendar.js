@@ -7,6 +7,7 @@ import TimeSelector from "./TimeSelector";
 import SessionInfo from "./SessionInfo";
 import ContactInfo from "./ContactInfo";
 import SuccessMessage from "./MessageDone";
+
 export default class ReservationCalendar extends Component {
   constructor(props) {
     super(props);
@@ -16,7 +17,8 @@ export default class ReservationCalendar extends Component {
       serviceId,
       activeDate,
       loadDates,
-      setLanguage
+      setLanguage,
+      loadCoupon
     } = props;
     $(document).on("click", triggerButton + "-LT a", () => {
       toggleModal();
@@ -28,14 +30,14 @@ export default class ReservationCalendar extends Component {
       setLanguage("EN");
       loadDates(serviceId, activeDate);
     });
-
-    var cuponCode = this.getParams(window.location.href).coupon
-      ? this.getParams(window.location.href).coupon
-      : "";
-    var today = new Date();
-    today.setHours(today.getHours() + 2);
-    document.cookie =
-      "coupon=" + cuponCode + "; expires=" + today.toUTCString() + ";";
+    let couponCode = this.getParams(window.location.href).coupon;
+    if (couponCode !== undefined && couponCode !== "null") {
+      let today = new Date();
+      today.setHours(today.getHours() + 2);
+      document.cookie =
+        "coupon=" + couponCode + "; expires=" + today.toUTCString() + ";";
+    }
+    loadCoupon(triggerButton, serviceId);
   }
   getParams = url => {
     let params = {};
