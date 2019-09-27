@@ -19,8 +19,8 @@ export const loadCoupon = (triggerButton, serviceId) => {
       config: { headers: { "Content-Type": "multipart/form-data" } }
     }).then(({ data }) => {
       if (data.responce === true) {
+        dispatch(setCoupon({ ...data, code: coupon }));
         if ($(triggerButton + "-EN").length > 0) {
-          dispatch(setCoupon({ ...data, code: coupon }));
           iziToast.success({
             title: coupon,
             message:
