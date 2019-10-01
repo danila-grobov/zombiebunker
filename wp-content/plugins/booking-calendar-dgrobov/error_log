@@ -2,3 +2,6 @@
 Stack trace:
 #0 {main}
   thrown in /home/o7pmne6jh1np/public_html/wp-content/plugins/booking-calendar-dgrobov/booking.processing.php on line 227
+[30-Sep-2019 04:50:15 Europe/Helsinki] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/o7pmne6jh1np/public_html/wp-content/plugins/booking-calendar-dgrobov/bs-services-add.php on line 85
+[30-Sep-2019 04:50:29 Europe/Helsinki] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/o7pmne6jh1np/public_html/wp-content/plugins/booking-calendar-dgrobov/bs-services-add.php on line 85
+[30-Sep-2019 04:50:37 Europe/Helsinki] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/o7pmne6jh1np/public_html/wp-content/plugins/booking-calendar-dgrobov/bs-services-add.php on line 85
