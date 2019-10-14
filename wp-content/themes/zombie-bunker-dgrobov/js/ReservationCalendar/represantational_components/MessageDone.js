@@ -10,7 +10,7 @@ export class MessageDone extends Component {
           <span className="thanks">
             {lng === "LT"
               ? "Ačiū už rezervaciją!"
-              : "Tank you for the reservation!"}
+              : "Thank you for the reservation!"}
           </span>
           <span className="info">
             {lng === "LT" ? "Lauksime jūsų:" : "We'll be waiting for you at:"}
