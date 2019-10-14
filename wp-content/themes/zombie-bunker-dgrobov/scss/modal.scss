@@ -156,11 +156,11 @@ b {
       .contactInfo {
         width: 490px;
         max-height: 500px;
-        overflow-y: scroll;
+        overflow-y: auto;
         align-self: center;
         justify-self: center;
         display: grid;
-        grid-gap: 30px;
+        grid-gap: 20px;
         padding: 10px;
         grid-auto-rows: min-content;
         font-size: 16px;
@@ -435,7 +435,7 @@ b {
       width: 100%;
       height: auto;
       position: fixed;
-      overflow-y: scroll;
+      overflow-y: auto;
       grid-template-columns: unset;
       .topBar {
         background: $dark;
