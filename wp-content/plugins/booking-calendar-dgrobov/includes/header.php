@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="format-detection" content="telephone=no">
-    <title>BreakRoom - rezervacija<?php echo CURT_VER; ?></title>
+    <title>Zombie Bunker - rezervacija<?php echo CURT_VER; ?></title>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./css/bs-admin.css" type="text/css" />
     <link href="css/dd.css" rel="stylesheet" type="text/css" />

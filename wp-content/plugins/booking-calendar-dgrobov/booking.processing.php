@@ -188,12 +188,12 @@ if (!$error) {
 
 
             include_once './includes/export/booking_ical.php';
-            sendMailFile($email, "BreakRoom - rezervacija/reservation", "timeBookingConfirmationCustomer.php", $serviceID, $data, $ical_file);
+            sendMailFile($email, "Zombie Bunker - rezervacija/reservation", "timeBookingConfirmationCustomer.php", $serviceID, $data, $ical_file);
 
             // issiusti sms, vartotojui:
 
-            // $zinute = urlencode("Informuojame, kad Jusu registracija patvirtinta. BreakRoom: +37068449944");
-            // $sms = "http://smsplus1.routesms.com:8080/bulksms/bulksms?username=supersmslt&password=k7bd7y&type=0&dlr=1&destination=" . $phone . "&source=BreakRoom&message=" . $zinute;
+            // $zinute = urlencode("Informuojame, kad Jusu registracija patvirtinta. Zombie Bunker: +37068449944");
+            // $sms = "http://smsplus1.routesms.com:8080/bulksms/bulksms?username=supersmslt&password=k7bd7y&type=0&dlr=1&destination=" . $phone . "&source=Zombie Bunker&message=" . $zinute;
             //$ch = curl_init($sms);
             //curl_exec($ch);
 
