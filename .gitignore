@@ -8,3 +8,5 @@
 !favicon.ico
 node_modules/
 dbconnect.php
+wp-content/cache/
+error_log
