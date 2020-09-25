@@ -22,7 +22,7 @@ Pirmenu, kad Jūsų laukiame Zombių bunkeryje - Zombie Bunker Vilnius: <br />
     <?php }?>
 </table><br>
 
-Jie neatvyksite būtinai perspėkite mus: info@zombiebunker.lt arba +370 684 49944. <br>
+Jie neatvyksite būtinai perspėkite mus: info@zombiebunker.lt arba +370 611 43946. <br>
 
 Atvykimas:<br>
 Taikos g. 1, Kreivalauziu km, Nemencines sen. Kelio Vilnius-Pabradė 22km, EMSI degalinė (kairėje, vaziuojant is Vilniaus) pries pat Nemencine. Sustokite aikšteleje ir laukite vado iš Zombių bunkerio.

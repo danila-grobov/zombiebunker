@@ -37,7 +37,7 @@ Jūsų rezervacijos info: <br />
    
     <br />
 Jūsų rezervacija patvirtinta. Jei kas pasikeistų - būtinai su mumis susisiekite</br>  
-Zombie Bunker Vilnius:  info@zombiebunker.lt,  +370 692 53676. <br />
+Zombie Bunker Vilnius:  info@zombiebunker.lt,  +370 611 43946. <br />
 <br />
 Atvykimas:<br />
 Taikos g. 1, Kreivalauziu km, Nemencines sen. Kelio Vilnius-Pabradė 22km, EMSI degalinė (kairėje, vaziuojant is Vilniaus) pries pat Nemencine. Sustokite aikšteleje ir laukite vado iš Zombių bunkerio.<br />
@@ -104,7 +104,7 @@ Total amount to be paid: {%currencyB%}&nbsp;<strong>{%total%}</strong>&nbsp;{%cu
     <?php }?>
     <br />
 Reservation is confirmed. Please contact us </br>
-Zombie Bunker Vilnius:  info@zombiebunker.lt,  +370 692 53676.<br />
+Zombie Bunker Vilnius:  info@zombiebunker.lt,  +370 611 43946.<br />
 <br />
 Payment types: cash or pre-payment via bank<br />
  Please call us if you get lost. <br>
