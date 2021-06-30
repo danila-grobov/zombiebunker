@@ -65,7 +65,7 @@ export default class SessionInfo extends Component {
         </div>
         <div className="price">
           <span>
-            {lng === "LT" ? "Kaina: " : "Price: "}
+            {lng === "LT" ? "Kaina: nuo " : "Price: from "}
             <span className="bold">{price}</span>
           </span>
         </div>
